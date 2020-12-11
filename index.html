@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <form action="#">
+        <h1>Enter Your Number</h1>
+        <input type="number" id="addnumber" placeholder="Enter Your Number">
+        <button onclick="even()">cheack</button>
+       
+    </form>
+
+    <h1 id="num"></h1>
+
+
+    <script>
+        let arr = [];
+
+        function even() {
+            var addnum = document.getElementById("addnumber").value;
+            arr.push(addnum)
+
+            document.getElementById("addnumber").value = "";
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] % 2 === 0 === true) {
+                    document.getElementById("num").innerHTML = "true"
+                } else if (arr[i] % 2 === 0 === false) {
+                    document.getElementById("num").innerHTML = "false"
+
+                }
+
+            }
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
